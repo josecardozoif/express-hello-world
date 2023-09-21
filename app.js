@@ -27,6 +27,11 @@ app.get('/pokemons', (req, res) => {
   res.send('temos que pegar...')
 })
 
+app.post('/series', (req, res) => {
+  console.log("Just got a request!")
+  res.send('my little pony...')
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
