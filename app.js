@@ -27,6 +27,9 @@ app.get('/pokemons', (req, res) => {
   res.json([{nome: 'Pikachu'},{nome: 'Butterfree'},{nome: 'Pidgeot'},{nome: 'Bulbasaur'},{nome: 'Charmander'},{nome: 'Squirt'},{nome: 'Kingler'},{nome: 'Primeape'},{nome: 'Muk'},{nome: 'Tauros'}])
 })
 
+app.get('/series', (req, res) => {
+})
+
 app.post('/series', (req, res) => {
   console.log("Just got a request!")
   res.json([{nome: 'Breaking Bad'},{nome: 'Alice in The Borderland'},{nome: 'The Boys!'}])
