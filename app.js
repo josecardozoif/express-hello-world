@@ -24,7 +24,7 @@ app.get('/tico', (req, res) => {
 
 app.get('/pokemons', (req, res) => {
   console.log("Just got a request!")
-  res.send('temos que pegar...')
+  res.json([{nome: 'Pikachu'},{nome: 'Butterfree'},{nome: 'Pidgeot'},{nome: 'Bulbasaur'},{nome: 'Charmander'},{nome: 'Squirt'},{nome: 'Kingler'},{nome: 'Primeape'},{nome: 'Muk'},{nome: 'Tauros'}])
 })
 
 app.post('/series', (req, res) => {
@@ -33,7 +33,6 @@ app.post('/series', (req, res) => {
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
-
 
 const html = `
 <!DOCTYPE html>
