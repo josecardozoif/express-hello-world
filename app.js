@@ -22,6 +22,11 @@ app.get('/tico', (req, res) => {
   res.send('teco')
 })
 
+app.get('/pokemons', (req, res) => {
+  console.log("Just got a request!")
+  res.send('temos que pegar...')
+})
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 
